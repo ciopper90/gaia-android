@@ -7,29 +7,30 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:1.0.0'
+        classpath 'com.android.tools.build:gradle:1.5.0'
     }
 }
 
 apply plugin: 'com.android.application'
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:+'
+    compile 'com.android.support:appcompat-v7:22.2.1'
     //compile 'com.google.android.gms:play-services:4.0.30'
     compile 'com.beardedhen:androidbootstrap:+'
     compile('de.keyboardsurfer.android.widget:crouton:1.8.5@aar') {
         // exclusion is not necessary, but generally a good idea.
         exclude group: 'com.google.android', module: 'support-v4'
     }
-    compile 'com.google.android.gms:play-services-analytics:7.3.0+'
+
+    compile 'com.google.android.gms:play-services-analytics:+'
     compile ('com.github.chrisbanes.bitmapcache:library:+') {
         exclude group: 'com.google.android', module: 'support-v4'
     }
 }
 
 android {
-    compileSdkVersion 21
-    buildToolsVersion "21.1.2"
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
 
     sourceSets {
         main {

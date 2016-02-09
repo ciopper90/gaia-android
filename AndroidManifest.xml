@@ -5,7 +5,7 @@
     android:versionName="@string/app_version" >
 
     <uses-sdk
-        android:minSdkVersion="9"
+        android:minSdkVersion="11"
         android:targetSdkVersion="19" />
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -30,14 +30,7 @@
         <meta-data android:name="com.google.android.gms.version"
            android:value="@integer/google_play_services_version" />
         <activity
-            android:name=".Accesso"
-            android:label="@string/title_activity_login_user"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:windowSoftInputMode="adjustResize|stateHidden"
-            android:launchMode= "singleInstance" >
-        </activity>
-        <activity
-            android:name=".MainActivity"
+            android:name=".MainActivityFinal"
             android:label="@string/title_activity_login_user"
             android:configChanges="orientation|keyboardHidden|screenSize" >
 			<intent-filter>
@@ -45,26 +38,5 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".ElencoAttivita"
-            android:label="@string/title_activity_elenco_attivita"
-            android:configChanges="orientation|keyboardHidden|screenSize" >
-        </activity>
-        <activity
-            android:name=".RubricaDelegati"
-            android:label="@string/title_activity_rubrica_delegati"
-            android:configChanges="orientation|keyboardHidden|screenSize" >
-        </activity>
-        <activity
-            android:name=".DisplayAttivita"
-            android:label="@string/title_activity_display_attivita"
-            android:configChanges="orientation|keyboardHidden|screenSize"  >
-        </activity>
-        <activity
-            android:name=".PostaIngresso"
-            android:label="@string/title_activity_display_attivita"
-            android:configChanges="orientation|keyboardHidden|screenSize"  >
-        </activity>
     </application>
-
 </manifest>
